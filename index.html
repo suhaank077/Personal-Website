@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,18 +9,83 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    #app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .txt {
+      font-size: 20px; /* Initial font size */
+      margin: 20px;
+    }
+
+    .txt:nth-child(1) {
+      animation: increaseSizeSuhaan 4s forwards; /* Apply animation to Suhaan */
+    }
+
+    .txt:nth-child(2) {
+      animation: increaseSizeSuhaank07 4s forwards; /* Apply animation to @suhaank07 */
+      font-size: 15px; /* Final font size for @suhaank07 */
+    }
+
+    #logo-container {
+      position: absolute;
+      top: -50px; /* Adjust this value as needed */
+      right: 10px; /* Adjust this value as needed */
+    }
+
+    #logo {
+      width: 30px; /* Adjust this value as needed */
+      height: 30px; /* Maintain aspect ratio */
+    }
+
+    @keyframes increaseSizeSuhaan {
+      0% {
+        transform: scale(3); /* Starting scale */
+
+      }
+      100% {
+        transform: scale(3); /* Final scale for Suhaan */
+
+      }
+    }
+
+    
+    @keyframes increaseSizeSuhaank07 {
+      0% {
+        transform: scale(1.25); /* Starting scale */
+
+      }
+      100% {
+        transform: scale(1.25); /* Final scale for @suhaank07 */
+
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <div id="app">
-   <div>Suhaan</div>
-   <div class="txt">
-     @suhaank07<span class="blink">_</span>
-   </div>
-</div>
-  
-  
+    
+    <div class="txt">Suhaan</div>
+    <div class="txt">@suhaank07<span class="blink">_</span></div>
+    <div id="logo-container">
+      <a href="https://github.com/suhaank077">
+        <img id="logo" src="green-logo.png" alt="Logo">
+      </a>
+    </div>
+  </div>
 
 </body>
 

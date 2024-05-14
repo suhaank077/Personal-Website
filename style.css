@@ -26,6 +26,10 @@ html, body {
   font-size: 1.8rem;
 }
 
+img{
+  color: white;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -43,5 +47,8 @@ html, body {
 .blink {
   animation-name: blink;
   animation-duration: 1s;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
+  opacity: 0; /* Initially hide the "_" */
+
 }
