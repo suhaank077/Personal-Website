@@ -26,8 +26,9 @@ html, body {
   font-size: 1.8rem;
 }
 
-img{
-  color: white;
+button {
+  color: #54FE55;
+  background-color: black;
 }
 
 @keyframes blink {

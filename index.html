@@ -75,14 +75,25 @@
 </head>
 
 <body>
+ 
   <div id="app">
+  
     <div class="txt">Suhaan</div>
     <div class="txt">@suhaank07<span class="blink">_</span></div>
     <div id="logo-container">
       <a href="https://github.com/suhaank077">
-        <img id="logo" src="green-logo.png" alt="Logo">
+        <img id="logo" src="images/green-logo.png" alt="Logo">
       </a>
     </div>
+
+    <audio id="player" src="audio/trance.mp3"></audio>
+    <div> 
+      <button onclick="document.getElementById('player').play()">Play</button> 
+      <button onclick="document.getElementById('player').pause()">Pause</button> 
+      <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+      <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+    </div>
+    
   </div>
 
 </body>
